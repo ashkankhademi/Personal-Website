@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: #eff4fd;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+.pimages {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.pimages .Ashkan {
+  width: 200px;
+  margin-top: -50px; /* Reduced margin-top to bring image closer to text */
+}
+
+.detel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.detel h1 {
+  font-size: 30px;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+.detel p {
+  color: #555;
+  line-height: 22px;
+}
+
+.detel a {
+  background: #212121;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.images {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.images .building {
+  width: 50%; /* Adjust the width as needed */
+  height: auto;
+  position: absolute;
+  left: 50%;
+  margin-top: -50px;
+  top: -150px;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.images .shape {
+  width: 400px;
+  height: auto;
+}
+
+.images:hover .shape {
+  left: 40px;
+}
+
+.images:hover .building {
+  left: 80%;
+}
+
+.social {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social a {
+  font-size: 30px;
+  color: #212121;
+  margin-right: 20px;
+}
+
+.social a:hover {
+  color: orange;
+}
+
+nav ul.right-align {
+  justify-content: flex-end;
+}
+
+
+
+
+
