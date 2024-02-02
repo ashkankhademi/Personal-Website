@@ -141,62 +141,75 @@ nav ul li a:hover {
 /* Responsive adjustments for small screens */
 @media screen and (max-width: 768px) {
   .detel, .images, .social {
-      position: relative;
-      text-align: center;
-      transform: none;
-      left: auto;
-      top: auto;
-      width: 100%;
+    position: relative;
+    text-align: center;
+    transform: none;
+    left: auto;
+    top: auto;
+    width: 100%;
   }
 
   .pimages .Ashkan, .images img {
-      width: 80%;
-      margin-top: 20px;
+    width: 80%;
+    margin-top: 20px;
   }
 
   .detel {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 
   .social a {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   nav ul {
-      flex-direction: row;
-      justify-content: center;
-      padding-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
   }
 
   nav ul li {
-      margin: 0 10px;
+    margin: 0 10px;
   }
 }
 
-/* Adjustments specifically for very small screens (like iPhones) */
+/* Additional adjustments specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
   .images {
-      position: absolute;
-      right: 0; /* Align to the right side */
-      top: 50%; /* Positioned halfway down the screen */
-      transform: translateY(-50%); /* Center vertically */
-      width: auto;
-      height: auto;
-      display: flex;
-      flex-direction: column; /* Stack images vertically */
-      align-items: flex-end; /* Align images to the right */
-      justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .images img {
-      width: 25%; /* Reduce the size of images */
-      margin-top: 10px; /* Space between images */
+  .images .shape {
+    width: 30%;
+    position: relative;
+    order: 2;
+  }
+
+  .images .building {
+    width: 60%;
+    position: relative;
+    display: block;
+    order: 1;
   }
 
   .social {
-      position: absolute;
-      bottom: 20px; /* Adjust as necessary */
-      right: 10px; /* Align next to the images */
+    position: relative;
+    transform: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+/* Media query for horizontal iPhone screen */
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  .images .building {
+    display: block;
+    position: relative;
+    width: 30%;
   }
 }
 
