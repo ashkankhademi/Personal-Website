@@ -190,7 +190,7 @@ nav ul li a:hover {
   }
 
   .images .building {
-    width: 10%;
+    width: 60%;
     position: relative;
     display: block;
     order: 1;
@@ -209,7 +209,7 @@ nav ul li a:hover {
   .images .building {
     display: block;
     position: relative;
-    width: 10%;
+    width: 30%;
   }
 }
 
