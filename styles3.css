@@ -175,29 +175,30 @@ nav ul li a:hover {
 
 /* Additional adjustments specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
-  .detel {
-      margin-bottom: 100px; /* Additional space for social icons */
-  }
-
-  .social {
-      position: static; /* Allow natural document flow */
-      margin-top: 20px; /* Space above social icons */
-      text-align: center;
-  }
-
   .images {
-      position: absolute;
-      right: 10px; /* Align to the right side */
-      bottom: 10px; /* Align to the bottom */
+      position: static; /* Normal document flow */
+      width: 100%;
+      margin-top: 10px; /* Space above images */
+      display: flex;
       flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center images */
   }
 
   .images img {
-      width: 25%; /* Reduced size for images */
+      width: 15%; /* Significantly smaller images */
       position: relative;
-      margin-top: 10px;
+      margin-bottom: 10px; /* Space between images */
+  }
+
+  /* Position social icons below the images */
+  .social {
+      position: static; /* Normal document flow */
+      margin-top: 10px; /* Space above social icons */
+      text-align: center;
   }
 }
+
+
 
 
 
