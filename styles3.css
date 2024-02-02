@@ -180,19 +180,17 @@ nav ul li a:hover {
     width: 100%;
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
 
   .images .shape {
-    width: 30%;
-    position: relative;
+    width: 60%;
     order: 2;
   }
 
   .images .building {
     width: 60%;
-    position: relative;
-    display: block;
     order: 1;
   }
 
@@ -212,6 +210,7 @@ nav ul li a:hover {
     width: 30%;
   }
 }
+
 
 
 
