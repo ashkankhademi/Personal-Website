@@ -146,42 +146,49 @@ nav ul li a:hover {
   /* ... (other styles) ... */
 
   .images {
-      width: 100%; /* Full width for container */
-      margin-top: 20px; /* Add space above the images */
-      display: flex; /* Use flexbox for image layout */
-      flex-direction: column; /* Stack images vertically */
-      align-items: center; /* Center images */
+      /* Adjust the layout of images container */
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap; /* Allow images to wrap */
+      justify-content: space-between; /* Distribute space between images */
   }
 
-  .images .building, .images .shape {
-      width: 80%; /* Adjust image width */
-      position: relative; /* Reset position to default */
-      left: 0; /* Reset left position */
-      transform: none; /* Remove transform */
-      margin-bottom: 20px; /* Add space below each image */
+  .images .building {
+      width: 45%; /* Adjust the width of LSB.jpeg */
+      display: block; /* Ensure it's displayed */
+      order: 2; /* Position LSB.jpeg after lassonde.png */
+  }
+
+  .images .shape {
+      width: 45%; /* Adjust the width of lassonde.png */
+      order: 1; /* Position lassonde.png before LSB.jpeg */
   }
 
   .social {
-      position: relative; /* Reset position */
-      transform: none; /* Remove transform */
-      margin-top: 20px; /* Add space above social icons */
-      text-align: center; /* Center-align icons */
+      /* Adjust the layout of social icons container */
+      position: relative;
+      transform: none;
+      margin-top: 10px;
+      text-align: center;
+      order: 3; /* Position social icons after the images */
+      width: 100%;
   }
 
   .social a {
-      margin-right: 10px; /* Adjust spacing between icons */
+      margin-right: 10px;
   }
 }
 
 /* Media query specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
-  /* ... (other styles) ... */
-
-  .images .building {
-      display: none; /* Hide LSB.jpeg on very small screens */
+  .images .shape {
+      width: 30%; /* Further reduce the size of lassonde.png */
+      float: right; /* Float to the right side of the screen */
   }
 
-  .images .shape {
-      width: 70%; /* Further adjust image width for very small screens */
+  .images .building {
+      width: 60%; /* Adjust the width of LSB.jpeg */
+      float: left; /* Float to the left side of the screen */
   }
 }
