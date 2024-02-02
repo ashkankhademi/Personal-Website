@@ -141,62 +141,64 @@ nav ul li a:hover {
 /* Responsive adjustments for small screens */
 @media screen and (max-width: 768px) {
   .detel, .images, .social {
-    position: relative;
-    text-align: center;
-    transform: none;
-    left: auto;
-    top: auto;
-    width: 100%;
+      position: relative;
+      text-align: center;
+      transform: none;
+      left: auto;
+      top: auto;
+      width: 100%;
   }
 
   .pimages .Ashkan, .images img {
-    width: 80%;
-    margin-top: 20px;
+      width: 80%;
+      margin-top: 20px;
   }
 
   .detel {
-    margin-top: 20px;
+      margin-top: 20px;
   }
 
   .social a {
-    font-size: 24px;
+      font-size: 24px;
   }
 
   nav ul {
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 10px;
+      flex-direction: row;
+      justify-content: center;
+      padding-top: 10px;
   }
 
   nav ul li {
-    margin: 0 10px;
+      margin: 0 10px;
   }
 }
 
-/* Additional adjustments specifically for very small screens (like iPhones) */
+/* Adjustments specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
-  .detel {
-    margin-bottom: 50px; /* Ensure enough space for images below the text */
-  }
-
-  .images, .social {
-    position: absolute;
-    right: 10px; /* Align to the right side of the page */
-    top: auto;
-    flex-direction: row; /* Images and icons side by side */
-    align-items: center; /* Align images and icons vertically center */
-    justify-content: flex-end; /* Align to the end of the right side */
+  .images {
+      position: absolute;
+      right: 50px; /* Adjust as needed */
+      top: 50%; /* Adjust as needed */
+      transform: translateY(-50%);
+      flex-direction: column;
+      align-items: flex-end;
+      width: auto;
   }
 
   .images img {
-    width: 20%; /* Further reduce width for iPhone screens */
-    margin-left: 10px; /* Space between images and icons */
+      width: 30%; /* Adjust as needed */
+      position: relative;
+      margin-top: 10px; /* Space between images */
   }
 
-  .social a {
-    margin-right: 10px; /* Adjust spacing between social icons */
+  .social {
+      position: absolute;
+      bottom: 20px; /* Adjust as needed */
+      left: 50%;
+      transform: translateX(-50%);
   }
 }
+
 
 
 
