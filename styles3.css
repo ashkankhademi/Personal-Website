@@ -176,7 +176,7 @@ nav ul li a:hover {
 /* Additional adjustments specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
   .images .building {
-    width: 25%; /* Make LSB.jpeg smaller */
+    width: 15%; /* Significantly reduce the size of LSB.jpeg */
     position: relative;
     margin-top: 10px;
     left: auto;
@@ -184,15 +184,20 @@ nav ul li a:hover {
   }
 
   .images .shape {
-    width: 50%; /* Adjust the size of lassonde.png to maintain layout */
+    width: 50%; /* Maintain size of lassonde.png */
+    position: relative;
+    left: auto;
+    transform: none;
   }
 
   .social {
-    position: static;
-    margin-top: 20px;
-    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
+
 
 
 
