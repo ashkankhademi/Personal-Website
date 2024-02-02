@@ -139,56 +139,37 @@ nav ul li a:hover {
 }
 
 
-/* ... (previous styles) ... */
 
-/* Media query for screens smaller than 768px */
-@media screen and (max-width: 768px) {
-  /* ... (other styles) ... */
 
-  .images {
-      /* Adjust the layout of images container */
-      width: 100%;
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap; /* Allow images to wrap */
-      justify-content: space-between; /* Distribute space between images */
-  }
 
-  .images .building {
-      width: 45%; /* Adjust the width of LSB.jpeg */
-      display: block; /* Ensure it's displayed */
-      order: 2; /* Position LSB.jpeg after lassonde.png */
-  }
-
-  .images .shape {
-      width: 45%; /* Adjust the width of lassonde.png */
-      order: 1; /* Position lassonde.png before LSB.jpeg */
-  }
-
-  .social {
-      /* Adjust the layout of social icons container */
-      position: relative;
-      transform: none;
-      margin-top: 10px;
-      text-align: center;
-      order: 3; /* Position social icons after the images */
-      width: 100%;
-  }
-
-  .social a {
-      margin-right: 10px;
-  }
-}
+/* ... (other styles) ... */
 
 /* Media query specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
+  .images {
+      position: relative;
+      width: 100%;
+      margin-top: 20px;
+  }
+
   .images .shape {
-      width: 30%; /* Further reduce the size of lassonde.png */
-      float: right; /* Float to the right side of the screen */
+      width: 30%; /* Reduce the size of lassonde.png */
+      position: absolute; /* Position it absolutely within .images */
+      right: 10px; /* Position to the right */
+      top: 0; /* Align to the top of .images */
   }
 
   .images .building {
       width: 60%; /* Adjust the width of LSB.jpeg */
-      float: left; /* Float to the left side of the screen */
+      position: relative; /* Reset to default positioning */
+      display: block; /* Ensure it is displayed */
+      margin: auto; /* Center the image */
+  }
+
+  .social {
+      position: relative;
+      transform: none;
+      margin-top: 60px; /* Add space to avoid overlap with images */
+      text-align: center;
   }
 }
