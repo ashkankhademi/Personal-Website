@@ -138,64 +138,42 @@ nav ul li a:hover {
   color: orange;
 }
 
-/* ... (previous styles) ... */
 
-/* Responsive adjustments for small screens */
+/* Existing styles... */
+
+/* Media query for screens smaller than 768px */
 @media screen and (max-width: 768px) {
-  .detel, .images, .social {
-    position: relative;
-    text-align: center;
-    transform: none; /* reset transform for small screens */
-    left: auto; /* reset left positioning */
-    top: auto; /* reset top positioning */
-    width: 100%;
-  }
-
-  .pimages .Ashkan, .images img {
-    width: 80%; /* Adjust image width */
-    margin-top: 20px;
-  }
-
-  .detel {
-    margin-top: 20px;
-  }
-
-  .social a {
-    font-size: 24px;
-  }
-
   nav ul {
-    flex-direction: row; /* Keep items in a line */
-    justify-content: center; /* Center items horizontally */
-    padding-top: 10px; /* Add some space at the top */
+      flex-direction: column; /* Stack the nav items vertically on smaller screens */
+      align-items: center; /* Center-align the items */
+  }
+
+  .pimages .Ashkan {
+      width: 100%; /* Make the image width responsive */
+      margin-top: 20px;
+  }
+
+  .images {
+      width: 100%; /* Full width for container */
+  }
+
+  .images .building, .images .shape {
+      width: 100%; /* Full width for images */
+      position: relative; /* Reset position to default */
+      left: 0; /* Reset left position */
+      transform: none; /* Remove transform */
+  }
+}
+
+/* Media query specifically for very small screens (like iPhones) */
+@media screen and (max-width: 414px) {
+  nav ul {
+      flex-direction: row; /* Keep nav items in a row on very small screens */
+      justify-content: center; /* Center the items horizontally */
+      padding: 0; /* Remove padding */
   }
 
   nav ul li {
-    margin: 0 10px; /* Adjust margin between items */
+      padding: 0 5px; /* Adjust spacing around each nav item */
   }
 }
-
-/* Additional adjustments specifically for very small screens (like iPhones) */
-@media screen and (max-width: 414px) {
-  .images {
-    position: static; /* Reset position to flow naturally in the document */
-    width: 100%; /* Full width */
-    margin-top: 20px; /* Add some space above images */
-  }
-
-  .images img {
-    width: 100%; /* Full width */
-    position: static; /* Reset position */
-    transform: none; /* Reset transform */
-    left: auto; /* Reset left positioning */
-    bottom: auto; /* Reset bottom positioning */
-    margin-top: 10px; /* Space between images */
-  }
-}
-
-
-
-
-
-
-
