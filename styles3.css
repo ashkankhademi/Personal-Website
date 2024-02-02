@@ -140,19 +140,19 @@ nav ul li a:hover {
 
 /* ... (previous styles) ... */
 
-/* Responsive adjustments */
+/* Responsive adjustments for small screens */
 @media screen and (max-width: 768px) {
   .detel, .images, .social {
     position: relative;
     text-align: center;
-    transform: translateX(0);
-    left: 0;
-    top: 0;
+    transform: none; /* reset transform for small screens */
+    left: auto; /* reset left positioning */
+    top: auto; /* reset top positioning */
     width: 100%;
   }
 
   .pimages .Ashkan, .images img {
-    width: 50%;
+    width: 80%; /* Adjust image width */
     margin-top: 20px;
   }
 
@@ -164,27 +164,32 @@ nav ul li a:hover {
     font-size: 24px;
   }
 
-  /* Adjusting navigation menu for smaller screens */
   nav ul {
-    flex-direction: row; /* Change to row to keep items in a line */
-    justify-content: center; /* Center items */
+    flex-direction: row; /* Keep items in a line */
+    justify-content: center; /* Center items horizontally */
     padding-top: 10px; /* Add some space at the top */
   }
 
   nav ul li {
-    margin: 0 5px; /* Reduce margin between items */
+    margin: 0 10px; /* Adjust margin between items */
   }
 }
 
-/* Further adjustments for very small screens like iPhones */
+/* Additional adjustments specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
-  .images img {
-    width: 100%; /* Increase width to prevent overlap */
-    margin-top: 0; /* Adjust margin */
+  .images {
+    position: static; /* Reset position to flow naturally in the document */
+    width: 100%; /* Full width */
+    margin-top: 20px; /* Add some space above images */
   }
 
-  .images {
-    margin-top: 30px; /* Add space above the images */
+  .images img {
+    width: 100%; /* Full width */
+    position: static; /* Reset position */
+    transform: none; /* Reset transform */
+    left: auto; /* Reset left positioning */
+    bottom: auto; /* Reset bottom positioning */
+    margin-top: 10px; /* Space between images */
   }
 }
 
