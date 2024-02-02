@@ -177,27 +177,28 @@ nav ul li a:hover {
 @media screen and (max-width: 414px) {
   .images {
       position: absolute;
-      right: 50px; /* Adjust as needed */
-      top: 50%; /* Adjust as needed */
-      transform: translateY(-50%);
+      right: 10%; /* Adjust this value as needed */
+      top: 60%; /* Adjust this value as needed */
+      transform: translate(-50%, -50%);
       flex-direction: column;
       align-items: flex-end;
       width: auto;
   }
 
   .images img {
-      width: 30%; /* Adjust as needed */
+      width: 25%; /* Adjust this value as needed */
       position: relative;
-      margin-top: 10px; /* Space between images */
+      margin-top: 10px;
   }
 
   .social {
       position: absolute;
-      bottom: 20px; /* Adjust as needed */
+      bottom: 20px;
       left: 50%;
       transform: translateX(-50%);
   }
 }
+
 
 
 
