@@ -144,49 +144,42 @@ nav ul li a:hover {
 
 
 
-/* ... (previous styles) ... */
+/* Existing styles... */
 
 /* Media query for screens smaller than 768px */
 @media screen and (max-width: 768px) {
-  /* ... (other styles) ... */
+  nav ul {
+      flex-direction: column; /* Stack the nav items vertically on smaller screens */
+      align-items: center; /* Center-align the items */
+  }
+
+  .pimages .Ashkan {
+      width: 100%; /* Make the image width responsive */
+      margin-top: 20px;
+  }
 
   .images {
       width: 100%; /* Full width for container */
-      margin-top: 20px; /* Add space above the images */
-      display: flex; /* Use flexbox for image layout */
-      flex-direction: column; /* Stack images vertically */
-      align-items: center; /* Center images */
   }
 
   .images .building, .images .shape {
-      width: 80%; /* Adjust image width */
+      width: 100%; /* Full width for images */
       position: relative; /* Reset position to default */
       left: 0; /* Reset left position */
       transform: none; /* Remove transform */
-      margin-bottom: 20px; /* Add space below each image */
-  }
-
-  .social {
-      position: relative; /* Reset position */
-      transform: none; /* Remove transform */
-      margin-top: 20px; /* Add space above social icons */
-      text-align: center; /* Center-align icons */
-  }
-
-  .social a {
-      margin-right: 10px; /* Adjust spacing between icons */
   }
 }
 
 /* Media query specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
-  /* ... (other styles) ... */
-
-  .images .building {
-      display: none; /* Hide LSB.jpeg on very small screens */
+  nav ul {
+      flex-direction: row; /* Keep nav items in a row on very small screens */
+      justify-content: center; /* Center the items horizontally */
+      padding: 0; /* Remove padding */
   }
 
-  .images .shape {
-      width: 70%; /* Further adjust image width for very small screens */
+  nav ul li {
+      padding: 0 5px; /* Adjust spacing around each nav item */
   }
 }
+
