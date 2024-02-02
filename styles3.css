@@ -175,43 +175,25 @@ nav ul li a:hover {
 
 /* Additional adjustments specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
-  .images {
+  .images .building {
+    width: 25%; /* Make LSB.jpeg smaller */
     position: relative;
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 10px;
+    left: auto;
+    transform: none;
   }
 
   .images .shape {
-    width: 30%;
-    position: relative;
-    order: 2;
-  }
-
-  .images .building {
-    width: 60%;
-    position: relative;
-    display: block;
-    order: 1;
+    width: 50%; /* Adjust the size of lassonde.png to maintain layout */
   }
 
   .social {
-    position: relative;
-    transform: none;
+    position: static;
     margin-top: 20px;
     text-align: center;
   }
 }
 
-/* Media query for horizontal iPhone screen */
-@media screen and (max-width: 736px) and (orientation: landscape) {
-  .images .building {
-    display: block;
-    position: relative;
-    width: 30%;
-  }
-}
 
 
 
