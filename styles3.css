@@ -138,6 +138,8 @@ nav ul li a:hover {
   color: orange;
 }
 
+/* ... (previous styles) ... */
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .detel, .images, .social {
@@ -162,15 +164,30 @@ nav ul li a:hover {
     font-size: 24px;
   }
 
+  /* Adjusting navigation menu for smaller screens */
   nav ul {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Change to row to keep items in a line */
+    justify-content: center; /* Center items */
+    padding-top: 10px; /* Add some space at the top */
   }
 
   nav ul li {
-    margin: 5px 0;
+    margin: 0 5px; /* Reduce margin between items */
   }
 }
+
+/* Further adjustments for very small screens like iPhones */
+@media screen and (max-width: 414px) {
+  .images img {
+    width: 100%; /* Increase width to prevent overlap */
+    margin-top: 0; /* Adjust margin */
+  }
+
+  .images {
+    margin-top: 30px; /* Add space above the images */
+  }
+}
+
 
 
 
