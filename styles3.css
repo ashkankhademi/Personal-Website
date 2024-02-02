@@ -55,7 +55,7 @@ nav ul li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 0 20px; /* Added padding for smaller screens */
+  padding: 0 20px;
 }
 
 .detel h1 {
@@ -143,14 +143,14 @@ nav ul li a:hover {
   .detel, .images, .social {
     position: relative;
     text-align: center;
-    transform: none; /* reset transform for small screens */
-    left: auto; /* reset left positioning */
-    top: auto; /* reset top positioning */
+    transform: none;
+    left: auto;
+    top: auto;
     width: 100%;
   }
 
   .pimages .Ashkan, .images img {
-    width: 80%; /* Adjust image width */
+    width: 80%;
     margin-top: 20px;
   }
 
@@ -163,49 +163,43 @@ nav ul li a:hover {
   }
 
   nav ul {
-    flex-direction: row; /* Keep items in a line */
-    justify-content: center; /* Center items horizontally */
-    padding-top: 10px; /* Add some space at the top */
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
   }
 
   nav ul li {
-    margin: 0 10px; /* Adjust margin between items */
+    margin: 0 10px;
   }
 }
 
 /* Additional adjustments specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
   .images {
-    position: static; /* Reset position to flow naturally in the document */
-    width: 100%; /* Full width */
-    margin-top: 20px; /* Add some space above images */
-    display: flex; /* Enable flexbox layout */
+    position: absolute;
+    right: 10px; /* Align to the right side, next to the social icons */
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    display: flex;
     flex-direction: column; /* Stack images vertically */
-    align-items: center; /* Center-align images */
+    align-items: flex-end; /* Align images to the right */
   }
 
-  .images .shape, .images .building {
-    width: 50%; /* Make images the same size */
-    position: static; /* Normal positioning */
-    transform: none; /* Reset any transformations */
-    left: auto; /* Reset left positioning */
-    bottom: auto; /* Reset bottom positioning */
-  }
-
-  .images .building {
-    order: 1; /* Place LSB.jpeg above lassonde.png */
-  }
-
-  .images .shape {
-    order: 2; /* Place lassonde.png below LSB.jpeg */
+  .images img {
+    width: 30%; /* Resize images to be smaller and the same size */
+    position: relative;
+    margin-top: 10px; /* Space between images */
   }
 
   .social {
-    position: static; /* Allow natural flow in the document */
-    margin-top: 10px; /* Space above social icons */
-    text-align: center; /* Center-align social icons */
+    position: absolute;
+    bottom: 20px;
+    right: 10px; /* Adjust as necessary */
   }
 }
+
 
 
 
