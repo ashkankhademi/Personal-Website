@@ -176,27 +176,40 @@ nav ul li a:hover {
 /* Additional adjustments specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
   .images {
-    position: absolute;
-    right: 10px; /* Align to the right side, next to the social icons */
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    height: auto;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
     display: flex;
-    flex-direction: column; /* Stack images vertically */
-    align-items: flex-end; /* Align images to the right */
+    justify-content: space-between;
   }
 
-  .images img {
-    width: 30%; /* Resize images to be smaller and the same size */
+  .images .shape {
+    width: 30%;
     position: relative;
-    margin-top: 10px; /* Space between images */
+    order: 2;
+  }
+
+  .images .building {
+    width: 60%;
+    position: relative;
+    display: block;
+    order: 1;
   }
 
   .social {
-    position: absolute;
-    bottom: 20px;
-    right: 10px; /* Adjust as necessary */
+    position: relative;
+    transform: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+/* Media query for horizontal iPhone screen */
+@media screen and (max-width: 736px) and (orientation: landscape) {
+  .images .building {
+    display: block;
+    position: relative;
+    width: 30%;
   }
 }
 
