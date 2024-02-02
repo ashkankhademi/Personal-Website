@@ -176,40 +176,26 @@ nav ul li a:hover {
 /* Additional adjustments specifically for very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
   .images {
-    position: relative;
     width: 100%;
+    position: relative;
     margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
   }
 
-  .images .shape {
-    width: 60%;
-    order: 2;
-  }
-
-  .images .building {
-    width: 60%;
-    order: 1;
+  .images img {
+    width: 45%;
+    position: relative;
+    margin-top: 0;
   }
 
   .social {
     position: relative;
-    transform: none;
     margin-top: 20px;
     text-align: center;
   }
 }
 
-/* Media query for horizontal iPhone screen */
-@media screen and (max-width: 736px) and (orientation: landscape) {
-  .images .building {
-    display: block;
-    position: relative;
-    width: 30%;
-  }
-}
 
 
 
