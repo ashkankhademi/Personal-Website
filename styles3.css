@@ -46,7 +46,7 @@ nav ul li a:hover {
 
 .pimages .Ashkan {
   width: 200px;
-  margin-top: -50px; /* Reduced margin-top to bring image closer to text */
+  margin-top: -50px;
 }
 
 .detel {
@@ -55,6 +55,7 @@ nav ul li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  padding: 0 20px; /* Added padding for smaller screens */
 }
 
 .detel h1 {
@@ -97,7 +98,7 @@ nav ul li a:hover {
 }
 
 .images .building {
-  width: 50%; /* Adjust the width as needed */
+  width: 50%;
   height: auto;
   position: absolute;
   left: 50%;
@@ -137,9 +138,40 @@ nav ul li a:hover {
   color: orange;
 }
 
-nav ul.right-align {
-  justify-content: flex-end;
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .detel, .images, .social {
+    position: relative;
+    text-align: center;
+    transform: translateX(0);
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .pimages .Ashkan, .images img {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .detel {
+    margin-top: 20px;
+  }
+
+  .social a {
+    font-size: 24px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
 }
+
 
 
 
