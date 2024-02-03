@@ -42,11 +42,11 @@ nav ul li a:hover {
   justify-content: center;
   position: relative;
   z-index: 2;
-  margin-top: 10px; /* Reduced top margin to bring the image closer to the text */
 }
 
 .pimages .Ashkan {
   width: 200px;
+  margin-top: -50px;
 }
 
 .detel {
@@ -100,50 +100,67 @@ nav ul li a:hover {
 /* Responsive adjustments for small screens */
 @media screen and (max-width: 768px) {
   .detel, .social {
-      position: relative;
-      text-align: center;
-      transform: none;
-      left: auto;
-      top: auto;
-      width: 100%;
+    position: relative;
+    text-align: center;
+    transform: none;
+    left: auto;
+    top: auto;
+    width: 100%;
   }
 
   .pimages .Ashkan {
-      width: 80%;
-      margin-top: 20px;
+    width: 80%;
+    margin-top: 20px;
   }
 
   .detel {
-      margin-top: 20px;
+    margin-top: 20px;
   }
 
   .social a {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   nav ul {
-      flex-direction: row;
-      justify-content: center;
-      padding-top: 10px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
   }
 
   nav ul li {
-      margin: 0 10px;
+    margin: 0 10px;
   }
 }
 
 /* Hide images on very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
   .images .building, .images .shape {
-      display: none; /* Hide both specific images */
+    display: none; /* Hide both specific images */
   }
 
   .social {
-      position: static; /* Normal document flow */
-      margin-top: 20px; /* Space above social icons */
-      text-align: center;
+    position: static; /* Normal document flow */
+    margin-top: 20px; /* Space above social icons */
+    text-align: center;
   }
 }
+
+/* Responsive adjustments for iPad screens in landscape orientation */
+@media screen and (orientation: landscape) {
+  .pimages .Ashkan {
+    width: 150px; /* Reduce the size of the image in landscape mode */
+    margin-top: 10px; /* Adjust the top margin */
+  }
+
+  .detel {
+    position: relative; /* Change position to relative in landscape mode */
+    top: initial;
+    left: initial;
+    transform: none;
+    padding-top: 20px; /* Add padding to separate from the image */
+  }
+}
+
 
 
 
