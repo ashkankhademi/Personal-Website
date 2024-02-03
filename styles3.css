@@ -145,21 +145,22 @@ nav ul li a:hover {
   }
 }
 
-/* Responsive adjustments for iPad screens in landscape orientation */
-@media screen and (orientation: landscape) {
+/* Adjustments for iPad landscape orientation */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .pimages .Ashkan {
-    width: 150px; /* Reduce the size of the image in landscape mode */
-    margin-top: 10px; /* Adjust the top margin */
+    width: 150px; /* Smaller image size for landscape */
+    margin-top: 0; /* Adjust top margin */
   }
 
   .detel {
-    position: relative; /* Change position to relative in landscape mode */
+    position: relative; /* Adjust position */
     top: initial;
     left: initial;
     transform: none;
-    padding-top: 20px; /* Add padding to separate from the image */
+    padding-top: 20px; /* Add some padding */
   }
 }
+
 
 
 
