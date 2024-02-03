@@ -80,34 +80,6 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-.images {
-  width: 30%;
-  position: absolute;
-  bottom: 0;
-  right: 2%;
-}
-
-.images img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  transition: bottom 1s, left 1s;
-}
-
-.images .building, .images .shape {
-  width: 50%;
-  height: auto;
-  position: absolute;
-  left: 50%;
-  margin-top: -50px;
-  top: -150px;
-  transform: translateX(-50%);
-  transition: bottom 1s, left 1s;
-}
-
 .social {
   position: absolute;
   bottom: 40px;
@@ -127,7 +99,7 @@ nav ul li a:hover {
 
 /* Responsive adjustments for small screens */
 @media screen and (max-width: 768px) {
-  .detel, .images, .social {
+  .detel, .social {
       position: relative;
       text-align: center;
       transform: none;
@@ -136,7 +108,7 @@ nav ul li a:hover {
       width: 100%;
   }
 
-  .pimages .Ashkan, .images img {
+  .pimages .Ashkan {
       width: 80%;
       margin-top: 20px;
   }
@@ -160,18 +132,7 @@ nav ul li a:hover {
   }
 }
 
-/* Hide images on very small screens (like iPhones) */
-@media screen and (max-width: 414px) {
-  .images .building, .images .shape {
-      display: none; /* Hide both specific images */
-  }
 
-  .social {
-      position: static; /* Normal document flow */
-      margin-top: 20px; /* Space above social icons */
-      text-align: center;
-  }
-}
 
 
 
