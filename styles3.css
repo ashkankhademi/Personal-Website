@@ -97,7 +97,7 @@ nav ul li a:hover {
   transition: bottom 1s, left 1s;
 }
 
-.images .building {
+.images .building, .images .shape {
   width: 50%;
   height: auto;
   position: absolute;
@@ -106,19 +106,6 @@ nav ul li a:hover {
   top: -150px;
   transform: translateX(-50%);
   transition: bottom 1s, left 1s;
-}
-
-.images .shape {
-  width: 400px;
-  height: auto;
-}
-
-.images:hover .shape {
-  left: 40px;
-}
-
-.images:hover .building {
-  left: 80%;
 }
 
 .social {
@@ -175,8 +162,8 @@ nav ul li a:hover {
 
 /* Hide images on very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
-  .images {
-      display: none; /* Hide both images */
+  .images .building, .images .shape {
+      display: none; /* Hide both specific images */
   }
 
   .social {
@@ -185,6 +172,7 @@ nav ul li a:hover {
       text-align: center;
   }
 }
+
 
 
 
