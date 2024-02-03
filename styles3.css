@@ -173,28 +173,10 @@ nav ul li a:hover {
   }
 }
 
-/* Additional adjustments specifically for very small screens (like iPhones) */
+/* Hide images on very small screens (like iPhones) */
 @media screen and (max-width: 414px) {
-  .detel a {
-      margin-bottom: 20px; /* Space below the Download Resume button */
-  }
-
   .images {
-      position: static; /* Normal document flow */
-      width: 100%;
-      margin-top: 20px; /* Space below the Download Resume button */
-      display: flex;
-      flex-direction: column; /* Stack images vertically */
-      align-items: center; /* Center images */
-  }
-
-  .images .shape {
-      width: 15%; /* Much smaller lassonde.png */
-      margin-bottom: 10px; /* Space between images */
-  }
-
-  .images .building {
-      width: 25%; /* LSB.jpeg size adjustment */
+      display: none; /* Hide both images */
   }
 
   .social {
@@ -203,6 +185,7 @@ nav ul li a:hover {
       text-align: center;
   }
 }
+
 
 
 
