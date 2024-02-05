@@ -5,10 +5,13 @@
   font-family: sans-serif;
 }
 
+body {
+  background: #eff4fd; /* Background color set for the whole page */
+}
+
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: #eff4fd;
 }
 
 nav {
@@ -156,6 +159,7 @@ nav ul li a:hover {
     text-align: center;
   }
 }
+
 
 
 
