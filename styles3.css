@@ -50,10 +50,10 @@ nav ul li a:hover {
 }
 
 .detel {
-  position: relative;
+  position: relative; /* Changed from absolute to relative */
   text-align: center;
   padding: 0 20px;
-  margin-bottom: 120px; /* Increased bottom margin */
+  margin-bottom: 50px; /* Space for the social icons */
 }
 
 .detel h1 {
@@ -79,17 +79,14 @@ nav ul li a:hover {
 }
 
 .social {
-  position: absolute;
-  bottom: 20px; /* Adjusted positioning */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3; /* Ensure it stays on top */
+  text-align: center; /* Center the social icons */
+  margin-bottom: 20px; /* Space below the icons */
 }
 
 .social a {
   font-size: 30px;
   color: #212121;
-  margin-right: 20px;
+  margin: 0 10px; /* Spacing between icons */
 }
 
 .social a:hover {
@@ -99,8 +96,13 @@ nav ul li a:hover {
 /* Responsive adjustments for small screens */
 @media screen and (max-width: 768px) {
   .detel {
+    position: relative;
+    text-align: center;
+    transform: none;
+    left: auto;
+    top: auto;
     width: 100%;
-    margin-bottom: 100px; /* Adjusted for smaller screens */
+    margin-bottom: 80px; /* Adjusted bottom margin */
   }
 
   .pimages .Ashkan {
@@ -119,18 +121,14 @@ nav ul li a:hover {
   }
 
   nav ul li {
-    margin: 0 5px;
+    margin: 0 10px;
   }
 }
 
 /* Additional adjustments for horizontal iPhone screens */
 @media screen and (max-width: 667px) {
   .detel {
-    margin-bottom: 80px; /* Further adjusted for very small screens */
-  }
-
-  .social {
-    bottom: 10px; /* Adjusted positioning for small screens */
+    margin-bottom: 60px; /* Further adjusted bottom margin */
   }
 }
 
@@ -142,7 +140,7 @@ nav ul li a:hover {
   }
 
   .detel {
-    margin-bottom: 150px; /* Adjusted for landscape orientation */
+    margin-bottom: 120px; /* Adjusted bottom margin for iPad landscape */
   }
 }
 
@@ -158,6 +156,9 @@ nav ul li a:hover {
     text-align: center;
   }
 }
+
+
+
 
 
 
