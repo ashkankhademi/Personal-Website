@@ -68,6 +68,9 @@ nav ul li a:hover {
 .detel p {
   color: #555;
   line-height: 22px;
+  border-style: solid;
+    border-color: #eff4fd;
+    border-width: 1px 250px 1px 250px;
 }
 
 .detel a {
