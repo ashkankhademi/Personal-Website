@@ -56,6 +56,7 @@ nav ul li a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 0 20px;
+  margin-bottom: 100px; /* Added bottom margin */
 }
 
 .detel h1 {
@@ -94,26 +95,23 @@ nav ul li a:hover {
 }
 
 .social a:hover {
-  color: orange;
+  color: purple;
 }
 
 /* Responsive adjustments for small screens */
 @media screen and (max-width: 768px) {
-  .detel, .social {
+  .detel {
     position: relative;
     text-align: center;
     transform: none;
     left: auto;
     top: auto;
     width: 100%;
+    margin-bottom: 80px; /* Adjusted bottom margin */
   }
 
   .pimages .Ashkan {
     width: 80%;
-    margin-top: 20px;
-  }
-
-  .detel {
     margin-top: 20px;
   }
 
@@ -132,34 +130,38 @@ nav ul li a:hover {
   }
 }
 
-/* Hide images on very small screens (like iPhones) */
-@media screen and (max-width: 414px) {
-  .images .building, .images .shape {
-    display: none; /* Hide both specific images */
-  }
-
-  .social {
-    position: static; /* Normal document flow */
-    margin-top: 20px; /* Space above social icons */
-    text-align: center;
+/* Additional adjustments for horizontal iPhone screens */
+@media screen and (max-width: 667px) {
+  .detel {
+    margin-bottom: 60px; /* Further adjusted bottom margin */
   }
 }
 
 /* Adjustments for iPad landscape orientation */
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   .pimages .Ashkan {
-    width: 150px; /* Smaller image size for landscape */
-    margin-top: 0; /* Adjust top margin */
+    width: 150px;
+    margin-top: 0;
   }
 
   .detel {
-    position: relative; /* Adjust position */
-    top: initial;
-    left: initial;
-    transform: none;
-    padding-top: 20px; /* Add some padding */
+    margin-bottom: 120px; /* Adjusted bottom margin for iPad landscape */
   }
 }
+
+/* Hide images on very small screens (like iPhones) */
+@media screen and (max-width: 414px) {
+  .images .building, .images .shape {
+    display: none;
+  }
+
+  .social {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
 
 
 
