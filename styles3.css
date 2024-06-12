@@ -17,3 +17,7 @@
 .social a:hover {
   color: rgb(15, 59, 232);
 }
+
+.project-title {
+  font-weight: bold;
+}
