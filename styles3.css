@@ -1,6 +1,27 @@
-.rounded {
-  height: 250px;
-  width: 250px;
+/* Wrapper for the profile picture */
+.profile-picture-wrapper {
+  width: 250px; /* Set the width */
+  height: 250px; /* Set the height */
+  border-radius: 50%; /* Fully rounded (circular) */
+  overflow: hidden; /* Ensures the image stays within the rounded bounds */
+  margin: 40px auto 0; /* Centers the wrapper horizontally, adds top margin, and removes bottom margin */
+  display: flex; /* Ensures the image is centered within the wrapper */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a soft shadow */
+}
+
+/* Ensure the image inside the wrapper is properly sized */
+.profile-picture-wrapper img {
+  width: 100%; /* Ensures the image fills the wrapper */
+  height: 100%; /* Ensures the image fills the wrapper */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Adjust the spacing for the text section */
+.text-section {
+  padding-top: 0; /* Removes the top padding */
+  margin-top: -40px; /* Moves the text section up by 40px */
 }
 
 .social {
@@ -12,12 +33,60 @@
   font-size: 30px;
   color: #212121;
   margin: 0 10px; /* Spacing between icons */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social a:hover {
   color: rgb(15, 59, 232);
+  transform: scale(1.2);
 }
 
 .project-title {
   font-weight: bold;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .nav-link {
+  color: #ffffff !important;
+}
+
+.dark-mode .social a {
+  color: #ffffff;
+}
+
+.dark-mode .social a:hover {
+  color: #1e90ff;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Button Animation */
+.btn-primary {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Body Transition for Dark Mode */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar, .social a {
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
