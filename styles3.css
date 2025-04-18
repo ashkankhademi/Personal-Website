@@ -55,6 +55,12 @@ body {
   transform: scale(1.1);
 }
 
+#theme-toggle {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
 /* ===== Hero Section ===== */
 .hero-section {
   padding: 40px 0 20px;
@@ -262,6 +268,20 @@ body {
     max-width: 220px;
     margin: 0 auto;
   }
+
+  /* New mobile nav spacing */
+  .social-icons {
+    gap: 12px;
+    padding-right: 15px;
+  }
+
+  #theme-toggle {
+    margin-left: 0;
+  }
+
+  .navbar-toggler {
+    order: -1;
+  }
 }
 
 @media (max-width: 576px) {
@@ -280,6 +300,12 @@ body {
   
   .emoji-bullets {
     font-size: 1rem;
+  }
+
+  /* Extra small devices adjustment */
+  .social-icons {
+    gap: 10px;
+    padding-right: 10px;
   }
 }
 
