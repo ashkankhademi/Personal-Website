@@ -37,6 +37,11 @@ body {
   transform: translateY(-1px);
 }
 
+.nav-social-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .social-icons-group {
   display: flex;
   align-items: center;
@@ -50,7 +55,6 @@ body {
 }
 
 .social-icons-group a:hover {
-  color: #007bff;
   transform: scale(1.1);
 }
 
@@ -64,7 +68,6 @@ body {
 }
 
 .theme-btn:hover {
-  color: #007bff;
   transform: scale(1.1);
 }
 
@@ -206,7 +209,7 @@ body {
 
 .dark-mode .social-icons-group a,
 .dark-mode .theme-btn {
-  color: #cbd5e0;
+  color: #e2e8f0 !important;
 }
 
 .dark-mode .hero-section h1 {
@@ -238,23 +241,29 @@ body {
 /* ===== Mobile Responsive ===== */
 @media (max-width: 768px) {
   .navbar-collapse {
+    display: flex;
+    flex-direction: column;
     padding-top: 1rem;
   }
-  
+
+  .nav-social-section {
+    order: 2;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
   .social-icons-group {
     justify-content: center;
     gap: 16px;
     padding: 12px 0 0;
-    margin-top: 12px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    width: 100%;
   }
-  
-  .theme-btn {
-    margin-left: 0;
-    padding-left: 4px;
+
+  .dark-mode .social-icons-group {
+    border-top-color: rgba(255, 255, 255, 0.1);
   }
-  
+
   .profile-picture-wrapper {
     width: 160px;
     height: 160px;
@@ -281,10 +290,6 @@ body {
     width: 100%;
     max-width: 220px;
     margin: 0 auto;
-  }
-
-  .dark-mode .social-icons-group {
-    border-top-color: rgba(255, 255, 255, 0.1);
   }
 }
 
