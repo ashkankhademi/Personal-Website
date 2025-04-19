@@ -15,7 +15,6 @@ body {
 /* ===== Navigation ===== */
 .navbar {
   padding: 15px 0;
-  transition: background-color 0.3s ease;
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(5px);
 }
@@ -29,8 +28,8 @@ body {
 .nav-link {
   font-weight: 500;
   margin: 0 10px;
-  transition: all 0.2s ease;
   color: #4a5568;
+  transition: all 0.2s ease;
 }
 
 .nav-link:hover {
@@ -38,30 +37,35 @@ body {
   transform: translateY(-1px);
 }
 
-.social-icons {
+.social-icons-group {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.social-icons a {
+.social-icons-group a {
   font-size: 1.2rem;
   color: #4a5568;
   transition: all 0.2s ease;
 }
 
-.social-icons a:hover {
+.social-icons-group a:hover {
   color: #007bff;
   transform: scale(1.1);
 }
 
-#theme-toggle {
+.theme-btn {
   padding: 0;
-  margin: 0;
   border: none;
   background: transparent;
-  color: inherit;
+  color: #4a5568;
   font-size: 1.2rem;
+  transition: all 0.2s ease;
+}
+
+.theme-btn:hover {
+  color: #007bff;
+  transform: scale(1.1);
 }
 
 /* ===== Hero Section ===== */
@@ -200,11 +204,8 @@ body {
   color: #e2e8f0 !important;
 }
 
-.dark-mode .social-icons a {
-  color: #cbd5e0;
-}
-
-.dark-mode #theme-toggle {
+.dark-mode .social-icons-group a,
+.dark-mode .theme-btn {
   color: #cbd5e0;
 }
 
@@ -234,48 +235,26 @@ body {
   color: #e2e8f0 !important;
 }
 
-/* ===== Animations ===== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ===== Responsive Adjustments ===== */
+/* ===== Mobile Responsive ===== */
 @media (max-width: 768px) {
   .navbar-collapse {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    padding-top: 1rem;
   }
-
-  .navbar-nav {
-    order: 1;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .social-icons {
-    order: 2;
-    width: 100%;
+  
+  .social-icons-group {
     justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
-    margin-top: 10px;
+    gap: 16px;
+    padding: 12px 0 0;
+    margin-top: 12px;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
   }
-
-  #theme-toggle {
-    margin: 0;
-    padding: 0;
-    font-size: 1.2rem;
+  
+  .theme-btn {
+    margin-left: 0;
+    padding-left: 4px;
   }
-
+  
   .profile-picture-wrapper {
     width: 160px;
     height: 160px;
@@ -304,12 +283,20 @@ body {
     margin: 0 auto;
   }
 
-  .dark-mode .social-icons {
+  .dark-mode .social-icons-group {
     border-top-color: rgba(255, 255, 255, 0.1);
   }
 }
 
 @media (max-width: 576px) {
+  .social-icons-group {
+    gap: 14px;
+  }
+  
+  .theme-btn {
+    padding-left: 2px;
+  }
+  
   .profile-picture-wrapper {
     width: 140px;
     height: 140px;
@@ -325,10 +312,6 @@ body {
   
   .emoji-bullets {
     font-size: 1rem;
-  }
-
-  .social-icons {
-    gap: 15px;
   }
 }
 
