@@ -240,7 +240,7 @@ body {
 
 /* Fix navbar toggler in dark mode */
 .dark-mode .navbar-toggler {
-  border-color: rgba(255,255,255,0.5);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .dark-mode .navbar-toggler-icon {
@@ -277,24 +277,24 @@ body {
     width: 160px;
     height: 160px;
   }
-  
+
   .hero-section h1 {
     font-size: 2rem;
   }
-  
+
   .hero-section h2 {
     font-size: 1.2rem;
   }
-  
+
   .content-section {
     padding: 20px;
   }
-  
+
   .button-group {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .btn {
     width: 100%;
     max-width: 220px;
@@ -306,24 +306,24 @@ body {
   .social-icons-group {
     gap: 14px;
   }
-  
+
   .theme-btn {
     padding-left: 2px;
   }
-  
+
   .profile-picture-wrapper {
     width: 140px;
     height: 140px;
   }
-  
+
   .hero-section h1 {
     font-size: 1.8rem;
   }
-  
+
   .hero-section h2 {
     font-size: 1.1rem;
   }
-  
+
   .emoji-bullets {
     font-size: 1rem;
   }
@@ -420,15 +420,15 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .projects-container {
-      padding: 20px 15px;
+    padding: 20px 15px;
   }
-  
+
   .project-card {
-      padding: 20px;
+    padding: 20px;
   }
-  
+
   .project-title {
-      font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -489,13 +489,13 @@ body {
   border-radius: 8px;
   background-color: white;
   padding: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #e2e8f0;
 }
 
 .dark-mode .company-logo {
   background-color: #2d3748;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-color: #4a5568;
 }
 
@@ -506,14 +506,207 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .experience-header {
-      flex-direction: column;
-      gap: 10px;
+    flex-direction: column;
+    gap: 10px;
   }
-  
+
   .company-logo {
-      width: 60px;
-      height: 60px;
-      align-self: flex-start;
+    width: 60px;
+    height: 60px;
+    align-self: flex-start;
   }
 }
 
+
+/* Animation Styles */
+
+
+/* ===== Animation Styles ===== */
+
+/* Fade-in-up animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation groups for headings, text, buttons */
+.animated-heading,
+.animated-subheading,
+.animated-list span,
+.animated-bio,
+.animated-buttons {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.animated-heading {
+  animation-delay: 0.2s;
+}
+
+.animated-subheading {
+  animation-delay: 0.4s;
+}
+
+.animated-list span:nth-child(1) {
+  animation-delay: 0.6s;
+}
+
+.animated-list span:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.animated-list span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.animated-list span:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.animated-bio {
+  animation-delay: 1.4s;
+}
+
+.animated-buttons {
+  animation-delay: 1.6s;
+}
+
+/* Main animated box */
+.animated-box {
+  background-color: #f5f5f5;
+  color: #1e1e2f;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  margin: 1rem auto 1.5rem auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+/* Dark mode override */
+.dark-mode .animated-box {
+  background-color: #2d3748;
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Inner content */
+.animated-box h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.animated-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.2rem;
+}
+
+.animated-box li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.animated-box p {
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+/* Button group with only one centered button */
+.animated-box .button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.animated-box .button-group .btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  min-width: 160px;
+  max-width: 220px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+/* work experience page */
+
+/* ==== Experience Animation (workexperience.html) ==== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+/* ===== Project Page Animation ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+.delay-4 {
+  animation-delay: 0.8s;
+}
