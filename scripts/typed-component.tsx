@@ -15,10 +15,10 @@ export const AboutBox: React.FC = () => {
                 and AI-based cybersecurity tools. I'm eager to bring my problem-solving skills to a dynamic development team.
             </p>
             <div className="button-group" style={{ textAlign: 'center', marginTop: '1rem' }}>
-                <a href="Resume/AshkanKhademi_Resume.pdf" className="btn btn-primary btn-lg">
+                <a href="/AshkanKhademi_Resume.pdf" className="btn btn-primary btn-lg">
                     <i className="fas fa-file-alt me-2"></i>View Resume
                 </a>
-                <a href="projects.html" className="btn btn-outline-secondary btn-lg">
+                <a href="/projects.html" className="btn btn-outline-secondary btn-lg">
                     <i className="fas fa-code me-2"></i>My Projects
                 </a>
             </div>
