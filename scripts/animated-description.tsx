@@ -5,15 +5,13 @@ export const AboutBox = () => {
         <div className="animated-box">
             <h4>About Me</h4>
             <ul className="animated-list">
-                <li><span>🎓 Recent Computer Science graduate from York University</span></li>
-                <li><span>💼 Internship experience at ReliablyME</span></li>
+                <li><span>🧑‍🎓 Recent Computer Science graduate from York University, soon starting my M.Eng in Electrical & Computer Engineering (AI) at TMU</span></li>
+                <li><span>💼 Currently interning at ReliablyME Inc. as a Software Developer</span></li>
                 <li><span>🛠️ Skilled in Java, JavaScript, React, Node.js, Python, and AI/ML</span></li>
-                <li><span>🚀 Passionate about building innovative solutions</span></li>
+                <li><span>🚀 Passionate about building innovative, real-world solutions</span></li>
             </ul>
             <p className="animated-bio">
-                Through my academic projects and professional experience, I’ve developed full-stack applications,
-                automated predictive models, and AI-based cybersecurity tools.
-                I’m eager to bring my problem-solving skills to a dynamic development team.
+                With hands-on experience from academic projects and professional work, I’ve built full-stack apps, predictive models, and AI-powered cybersecurity tools. I’m always excited to bring creative problem-solving to dynamic development teams.
             </p>
             <div className="button-group animated-buttons">
                 <a
