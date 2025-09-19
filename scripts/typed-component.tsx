@@ -6,7 +6,6 @@ export const AboutBox: React.FC = () => {
             <h4 style={{ textAlign: 'center' }}>About Me</h4>
             <ul>
                 <li>🎓 Recent Computer Science graduate from York University</li>
-                <li>💼 Internship experience at ReliablyME</li>
                 <li>🔧 Skilled in Java, JavaScript, React, Node.js, Python, and AI/ML</li>
                 <li>🚀 Passionate about building innovative solutions</li>
             </ul>
