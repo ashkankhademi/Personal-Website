@@ -333,20 +333,31 @@ body {
 /* ===== Projects Page Styles ===== */
 .projects-container {
   padding: 40px 20px;
-  max-width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* Desktop: 2 columns */
+@media (min-width: 992px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .project-card {
   background-color: #fff;
   border-radius: 8px;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -358,7 +369,7 @@ body {
   width: 100%;
   height: 250px;
   overflow: hidden;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #f0f0f0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -366,10 +377,31 @@ body {
   flex-shrink: 0;
 }
 
+/* Individual project background colors matching images */
+.project-card:nth-child(1) .project-image-wrapper {
+  background: linear-gradient(135deg, #5b7db1 0%, #3d5a7e 100%);
+}
+
+.project-card:nth-child(2) .project-image-wrapper {
+  background: linear-gradient(135deg, #6b46c1 0%, #553c9a 100%);
+}
+
+.project-card:nth-child(3) .project-image-wrapper {
+  background: linear-gradient(135deg, #2d7a6e 0%, #1e5a4f 100%);
+}
+
+.project-card:nth-child(4) .project-image-wrapper {
+  background: linear-gradient(135deg, #b83c3c 0%, #8e2f2f 100%);
+}
+
+.project-card:nth-child(5) .project-image-wrapper {
+  background: linear-gradient(135deg, #4a6fa5 0%, #2e4a73 100%);
+}
+
 .project-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.3s ease;
   display: block;
   max-width: 100%;
