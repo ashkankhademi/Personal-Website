@@ -335,14 +335,18 @@ body {
   padding: 40px 20px;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+/* Grid layout only for projects page (has project-image-wrapper) */
+.projects-container:has(.project-image-wrapper) {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 }
 
-/* Desktop: 2 columns */
+/* Desktop: 2 columns only for projects page */
 @media (min-width: 992px) {
-  .projects-container {
+  .projects-container:has(.project-image-wrapper) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
