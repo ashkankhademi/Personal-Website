@@ -109,6 +109,11 @@ body {
   margin-bottom: 15px;
 }
 
+/* Keep each half of the subtitle intact so it never breaks mid-phrase */
+.hero-section h2 .hero-role {
+  display: inline-block;
+}
+
 /* ===== Content Section ===== */
 .content-section {
   flex: 1;
@@ -324,6 +329,15 @@ body {
 
   .hero-section h2 {
     font-size: 1.1rem;
+  }
+
+  /* Stack the two halves on their own lines instead of dangling the divider */
+  .hero-section h2 .hero-role {
+    display: block;
+  }
+
+  .hero-section h2 .hero-role-divider {
+    display: none;
   }
 
   .emoji-bullets {
