@@ -5,7 +5,7 @@ export const AboutBox = () => {
         <div className="animated-box">
             <h4>About Me</h4>
             <ul className="animated-list">
-                <li><span>🧑‍🎓 Computer Science graduate from York University, currently pursuing an M.Eng in Electrical & Computer Engineering (AI Concenteration) at TMU</span></li>
+                <li><span>🧑‍🎓 Computer Science graduate from York University, currently pursuing an M.Eng in Electrical & Computer Engineering (AI Concentration) at TMU</span></li>
 
                 <li><span>🛠️ Skilled in Java, JavaScript, React, Node.js, Python, and AI/ML</span></li>
                 <li><span>🚀 Passionate about building innovative, real-world solutions</span></li>
