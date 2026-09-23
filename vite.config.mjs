@@ -20,6 +20,7 @@ export default defineConfig({
                 main: resolve(__dirname, 'index.html'),
                 projects: resolve(__dirname, 'projects.html'),
                 workexperience: resolve(__dirname, 'workexperience.html'),
+                researchexperience: resolve(__dirname, 'researchexperience.html'),
             },
         },
     },

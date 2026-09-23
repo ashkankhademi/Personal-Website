@@ -13,6 +13,7 @@
     "scripts/**/*",
     "index.html",
     "projects.html",
-    "workexperience.html"
+    "workexperience.html",
+    "researchexperience.html"
   ]
 }
